@@ -3,13 +3,10 @@ package com.qa.practice.testcases;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeMethod;
-import org.testng.AssertJUnit;
+
 import java.io.IOException;
 
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
 
 import com.qa.practice.base.TestBase;
 import com.qa.practice.pages.DashBoard;
@@ -40,7 +37,7 @@ public class loginPageTest extends TestBase{
 	public void validLoginTest() {
 		
 		db = lp.dologin(pro.getProperty("username"),pro.getProperty("password") );
-		AssertJUnit.assertTrue(db.userNameAfterLogin());
+		Assert.assertTrue(db.userNameAfterLogin());
 	
 	}
 	
@@ -50,14 +47,14 @@ public class loginPageTest extends TestBase{
 	@Test
 	public void phpLogoTest() {		
 	
-		AssertJUnit.assertTrue(lp.phpLogo());	
+		Assert.assertTrue(lp.phpLogo());	
 	}
 	
 	
 	@Test 
 	public void paymentlogoTest() {
 		
-		AssertJUnit.assertTrue(lp.paymentLogo());
+		Assert.assertTrue(lp.paymentLogo());
 			
 	}
 

@@ -49,10 +49,5 @@ public class TestBase {
 
 	}
 
-	public static void main(String[] args) throws IOException {
-		TestBase b = new TestBase();
-		b.driver_int();
-
-	}
 
 }

@@ -1,13 +1,12 @@
 package com.qa.practice.testcases;
 
 import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
+
 import java.io.IOException;
 
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
 
 import com.qa.practice.base.TestBase;
 import com.qa.practice.pages.DashBoard;
@@ -34,7 +33,7 @@ public class DashBoardTest extends TestBase{
 	@Test 
 	public void dashboardWalletTest() throws InterruptedException {
 		
-		AssertJUnit.assertTrue(db.deshboardWallet());
+		Assert.assertTrue(db.deshboardWallet());
 	
 		
 	}

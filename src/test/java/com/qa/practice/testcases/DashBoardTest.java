@@ -11,6 +11,7 @@ import org.testng.annotations.BeforeMethod;
 import com.qa.practice.base.TestBase;
 import com.qa.practice.pages.DashBoard;
 import com.qa.practice.pages.loginPage;
+import com.qa.practice.utils.CommonUtility;
 
 public class DashBoardTest extends TestBase{
 	
@@ -33,7 +34,8 @@ public class DashBoardTest extends TestBase{
 	@Test 
 	public void dashboardWalletTest() throws InterruptedException {
 		
-		Assert.assertTrue(db.deshboardWallet());
+		//Assert.assertTrue(db.deshboardWallet());
+		Assert.assertTrue(CommonUtility.getDisplayed(db.wallet));
 	
 		
 	}

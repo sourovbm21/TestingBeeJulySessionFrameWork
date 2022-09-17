@@ -6,7 +6,10 @@
       <class name="com.qa.practice.testcases.loginPageTest">
         <methods>
           <include name="setUp"/>
+          <include name="phpLogoTest"/>
+          <include name="validLoginTest"/>
           <include name="tearDown"/>
+          <include name="paymentlogoTest"/>
           <include name="invalidLoginTest"/>
         </methods>
       </class> <!-- com.qa.practice.testcases.loginPageTest -->

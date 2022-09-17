@@ -6,7 +6,10 @@ import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxBinary;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -26,12 +29,23 @@ public class TestBase {
 		String browser_Name = pro.getProperty("Browser");
 
 		if (browser_Name.equalsIgnoreCase("chrome")) {
+			ChromeOptions cop = new ChromeOptions();
+			cop.addArguments("--headless");
+			
+			
 			WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver();
+			driver = new ChromeDriver(cop);
 
 		} else if (browser_Name.equalsIgnoreCase("firefox")) {
+			
+			FirefoxBinary fb = new FirefoxBinary();
+			fb.addCommandLineOptions("--headless");
+			FirefoxOptions fbop = new FirefoxOptions();
+			fbop.setBinary(fb);
+			
+			
 			WebDriverManager.firefoxdriver().setup();
-			driver = new FirefoxDriver();
+			driver = new FirefoxDriver(fbop);
 		} else if (browser_Name.equalsIgnoreCase("edge")) {
 			//
 

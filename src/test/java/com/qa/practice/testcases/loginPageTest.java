@@ -41,7 +41,6 @@ public class loginPageTest extends TestBase {
 	
 	public void invalidLoginTest(String uname,String pwd) throws InterruptedException {
 		
-		//[class='alert alert-danger failed']
 		db = lp.dologin(uname, pwd);
 		Thread.sleep(2000);
 		Assert.assertTrue(lp.invalid_Login());		

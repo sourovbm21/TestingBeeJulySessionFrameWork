@@ -26,6 +26,7 @@ public class TestBase {
 				+ "qa/practice/config/configeration.properties");
 
 		pro.load(fis);
+		
 		String browser_Name = pro.getProperty("Browser");
 
 		if (browser_Name.equalsIgnoreCase("chrome")) {

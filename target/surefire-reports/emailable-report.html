@@ -9,25 +9,13 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Php Regression Suite</th></tr>
-<tr><td><a href="#t0">methods</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">31,046</td><td></td><td></td></tr>
+<tr><td><a href="#t0">methods</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">11,613</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Php Regression Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">methods &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.qa.practice.testcases.loginPageTest</td><td><a href="#m0">validLoginTest</a></td><td rowspan="1">1663685154828</td><td rowspan="1">7413</td></tr><tr><th colspan="4">methods &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">com.qa.practice.testcases.loginPageTest</td><td><a href="#m1">invalidLoginTest</a></td><td rowspan="2">1663685148310</td><td rowspan="2">4159</td></tr><tr class="passedeven"><td><a href="#m2">invalidLoginTest</a></td></tr><tr class="passedeven"><td><a href="#m3">paymentlogoTest</a></td><td rowspan="1">1663685167119</td><td rowspan="1">44</td></tr><tr class="passedeven"><td><a href="#m4">phpLogoTest</a></td><td rowspan="1">1663685164745</td><td rowspan="1">41</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Php Regression Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">methods &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.qa.practice.testcases.DashBoardTest</td><td><a href="#m0">dashboardWalletTest</a></td><td rowspan="1">1663686822087</td><td rowspan="1">105</td></tr></tbody>
 </table>
-<h2>methods</h2><h3 id="m0">com.qa.practice.testcases.loginPageTest#validLoginTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on MAC (96c01947a3001aa6ba1258ba9519be3f)] -&gt; xpath: //span[text()=&apos;Welcome Back&apos;]] (tried for 5 second(s) with 500 milliseconds interval)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Tohidurs-Air&apos;, ip: &apos;2a02:c7e:10b3:1200:94f2:4b17:1266:aa2%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;11.0.15.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/hw/9qtphsf54yb...}, goog:chromeOptions: {debuggerAddress: localhost:61312}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 96c01947a3001aa6ba1258ba9519be3f
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at com.qa.practice.pages.DashBoard.userNameAfterLogin(DashBoard.java:41)
-	at com.qa.practice.testcases.loginPageTest.validLoginTest(loginPageTest.java:36)
+<h2>methods</h2><h3 id="m0">com.qa.practice.testcases.DashBoardTest#dashboardWalletTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at com.qa.practice.testcases.DashBoardTest.dashboardWalletTest(DashBoardTest.java:38)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.qa.practice.testcases.loginPageTest#invalidLoginTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>user@phptravelsffff.com</td><td>demouser</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.qa.practice.testcases.loginPageTest#invalidLoginTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>user@phptravelsff.com</td><td>demouserff</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.qa.practice.testcases.loginPageTest#paymentlogoTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.qa.practice.testcases.loginPageTest#phpLogoTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

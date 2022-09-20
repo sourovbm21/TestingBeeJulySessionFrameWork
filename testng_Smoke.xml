@@ -3,8 +3,7 @@
 <suite name="Php Regression Suite">
   <test thread-count="2" name="methods">
     <classes>
-      <class name="com.qa.practice.testcases.loginPageTest"/>
-      <class name="com.qa.practice.testcases.DashBoardTest"></class>
+      <class name="com.qa.practice.testcases.DashBoardTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

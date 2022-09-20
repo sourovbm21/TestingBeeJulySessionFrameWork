@@ -30,12 +30,12 @@ public class TestBase {
 		String browser_Name = pro.getProperty("Browser");
 
 		if (browser_Name.equalsIgnoreCase("chrome")) {
-			ChromeOptions cop = new ChromeOptions();
-			cop.addArguments("--headless");
+//			ChromeOptions cop = new ChromeOptions();
+//			cop.addArguments("--headless");
 			
 			
 			WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver(cop);
+			driver = new ChromeDriver();
 
 		} else if (browser_Name.equalsIgnoreCase("firefox")) {
 			

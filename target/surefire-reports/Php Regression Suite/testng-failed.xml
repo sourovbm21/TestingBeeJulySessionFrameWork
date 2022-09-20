@@ -3,13 +3,13 @@
 <suite name="Failed suite [Php Regression Suite]" guice-stage="DEVELOPMENT" verbose="0">
   <test thread-count="5" name="methods(failed)" verbose="0">
     <classes>
-      <class name="com.qa.practice.testcases.loginPageTest">
+      <class name="com.qa.practice.testcases.DashBoardTest">
         <methods>
-          <include name="setUp"/>
-          <include name="validLoginTest"/>
-          <include name="tearDown"/>
+          <include name="teardown"/>
+          <include name="dashboardWalletTest"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- com.qa.practice.testcases.loginPageTest -->
+      </class> <!-- com.qa.practice.testcases.DashBoardTest -->
     </classes>
   </test> <!-- methods(failed) -->
 </suite> <!-- Failed suite [Php Regression Suite] -->

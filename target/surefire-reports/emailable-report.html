@@ -9,13 +9,50 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Php Regression Suite</th></tr>
-<tr><td><a href="#t0">methods</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">11,613</td><td></td><td></td></tr>
+<tr><td><a href="#t0">methods</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">0</td><td class="num">11,544</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Php Regression Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">methods &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.qa.practice.testcases.DashBoardTest</td><td><a href="#m0">dashboardWalletTest</a></td><td rowspan="1">1663686822087</td><td rowspan="1">105</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Php Regression Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">methods &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.qa.practice.testcases.DashBoardTest</td><td><a href="#m0">setup</a></td><td rowspan="1">1663688252980</td><td rowspan="1">11443</td></tr><tr><th colspan="4">methods &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">com.qa.practice.testcases.DashBoardTest</td><td><a href="#m1">teardown</a></td><td rowspan="1">1663688264449</td><td rowspan="1">0</td></tr><tr><th colspan="4">methods &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.qa.practice.testcases.DashBoardTest</td><td><a href="#m2">dashboardWalletTest</a></td><td rowspan="1">1663688264446</td><td rowspan="1">0</td></tr></tbody>
 </table>
-<h2>methods</h2><h3 id="m0">com.qa.practice.testcases.DashBoardTest#dashboardWalletTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
-	at com.qa.practice.testcases.DashBoardTest.dashboardWalletTest(DashBoardTest.java:38)
+<h2>methods</h2><h3 id="m0">com.qa.practice.testcases.DashBoardTest#setup</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: TimedPromise timed out after 3000 ms
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Tohidurs-Air&apos;, ip: &apos;2a02:c7e:10b3:1200:94f2:4b17:1266:aa2%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;11.0.15.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 104.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220902153754, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 19.6.0, moz:processID: 16784, moz:profile: /var/folders/hw/9qtphsf54yb..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e01a5b36-278d-46b4-a48e-d72144313212
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy8.click(Unknown Source)
+	at com.qa.practice.pages.loginPage.dologin(loginPage.java:39)
+	at com.qa.practice.testcases.DashBoardTest.setup(DashBoardTest.java:29)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 43 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.qa.practice.testcases.DashBoardTest#teardown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.qa.practice.testcases.DashBoardTest#dashboardWalletTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: TimedPromise timed out after 3000 ms
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Tohidurs-Air&apos;, ip: &apos;2a02:c7e:10b3:1200:94f2:4b17:1266:aa2%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;11.0.15.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 104.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220902153754, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 19.6.0, moz:processID: 16784, moz:profile: /var/folders/hw/9qtphsf54yb..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e01a5b36-278d-46b4-a48e-d72144313212
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy8.click(Unknown Source)
+	at com.qa.practice.pages.loginPage.dologin(loginPage.java:39)
+	at com.qa.practice.testcases.DashBoardTest.setup(DashBoardTest.java:29)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 43 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

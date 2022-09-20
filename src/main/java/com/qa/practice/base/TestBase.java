@@ -26,8 +26,9 @@ public class TestBase {
 				+ "qa/practice/config/configeration.properties");
 
 		pro.load(fis);
-		
-		String browser_Name = pro.getProperty("Browser");
+		String browser_Name	= System.getProperty("browser")!=null ? System.getProperty("browser") : pro.getProperty("Browser");
+	//	String browser_Name = pro.getProperty("Browser");
+		//mvn test -Dbrowser=chrome
 
 		if (browser_Name.equalsIgnoreCase("chrome")) {
 //			ChromeOptions cop = new ChromeOptions();
@@ -41,12 +42,12 @@ public class TestBase {
 			
 			FirefoxBinary fb = new FirefoxBinary();
 			fb.addCommandLineOptions("--headless");
-			FirefoxOptions fbop = new FirefoxOptions();
-			fbop.setBinary(fb);
+			FirefoxOptions foption = new FirefoxOptions();
+			foption.setBinary(fb);
 			
 			
 			WebDriverManager.firefoxdriver().setup();
-			driver = new FirefoxDriver(fbop);
+			driver = new FirefoxDriver();
 		} else if (browser_Name.equalsIgnoreCase("edge")) {
 			//
 

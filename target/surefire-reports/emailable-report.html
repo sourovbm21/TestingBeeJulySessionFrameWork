@@ -9,16 +9,53 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Php Regression Suite</th></tr>
-<tr><td><a href="#t0">methods</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">0</td><td class="num">11,544</td><td></td><td></td></tr>
+<tr><td><a href="#t0">methods</a></td><td class="num">0</td><td class="num attn">5</td><td class="num">0</td><td class="num attn">1</td><td class="num">34,219</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Php Regression Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">methods &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.qa.practice.testcases.DashBoardTest</td><td><a href="#m0">setup</a></td><td rowspan="1">1663688252980</td><td rowspan="1">11443</td></tr><tr><th colspan="4">methods &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">com.qa.practice.testcases.DashBoardTest</td><td><a href="#m1">teardown</a></td><td rowspan="1">1663688264449</td><td rowspan="1">0</td></tr><tr><th colspan="4">methods &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.qa.practice.testcases.DashBoardTest</td><td><a href="#m2">dashboardWalletTest</a></td><td rowspan="1">1663688264446</td><td rowspan="1">0</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Php Regression Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">methods &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.qa.practice.testcases.DashBoardTest</td><td><a href="#m0">setup</a></td><td rowspan="1">1663700514268</td><td rowspan="1">9369</td></tr><tr class="failedodd"><td rowspan="1">com.qa.practice.testcases.loginPageTest</td><td><a href="#m1">setUp</a></td><td rowspan="1">1663700503111</td><td rowspan="1">11115</td></tr><tr><th colspan="4">methods &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.qa.practice.testcases.loginPageTest</td><td><a href="#m2">invalidLoginTest</a></td><td rowspan="1">1663700498425</td><td rowspan="1">4293</td></tr><tr><th colspan="4">methods &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">com.qa.practice.testcases.DashBoardTest</td><td><a href="#m3">teardown</a></td><td rowspan="1">1663700523642</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td rowspan="7">com.qa.practice.testcases.loginPageTest</td><td><a href="#m4">setUp</a></td><td rowspan="3">1663700514262</td><td rowspan="3">0</td></tr><tr class="skippedodd"><td><a href="#m5">setUp</a></td></tr><tr class="skippedodd"><td><a href="#m6">setUp</a></td></tr><tr class="skippedodd"><td><a href="#m7">tearDown</a></td><td rowspan="4">1663700514249</td><td rowspan="4">0</td></tr><tr class="skippedodd"><td><a href="#m8">tearDown</a></td></tr><tr class="skippedodd"><td><a href="#m9">tearDown</a></td></tr><tr class="skippedodd"><td><a href="#m10">tearDown</a></td></tr><tr><th colspan="4">methods &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.qa.practice.testcases.DashBoardTest</td><td><a href="#m11">dashboardWalletTest</a></td><td rowspan="1">1663700523639</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td rowspan="4">com.qa.practice.testcases.loginPageTest</td><td><a href="#m12">invalidLoginTest</a></td><td rowspan="1">1663700514234</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td><a href="#m13">paymentlogoTest</a></td><td rowspan="1">1663700514263</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td><a href="#m14">phpLogoTest</a></td><td rowspan="1">1663700514253</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td><a href="#m15">validLoginTest</a></td><td rowspan="1">1663700514247</td><td rowspan="1">0</td></tr></tbody>
 </table>
-<h2>methods</h2><h3 id="m0">com.qa.practice.testcases.DashBoardTest#setup</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: TimedPromise timed out after 3000 ms
+<h2>methods</h2><h3 id="m0">com.qa.practice.testcases.DashBoardTest#setup</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 0.971
+  (Session info: chrome=105.0.5195.125)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Tohidurs-Air&apos;, ip: &apos;2a02:c7e:10b3:1200:94f2:4b17:1266:aa2%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;11.0.15.1&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 104.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220902153754, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 19.6.0, moz:processID: 16784, moz:profile: /var/folders/hw/9qtphsf54yb..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: e01a5b36-278d-46b4-a48e-d72144313212
+System info: host: &apos;Tohidurs-Air&apos;, ip: &apos;2a02:c7e:10b3:1200:79b9:d8f8:88e4:c7f4%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;11.0.15.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/hw/9qtphsf54yb...}, goog:chromeOptions: {debuggerAddress: localhost:62616}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0557ed9202eab998cf98b261e47bbe64
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.qa.practice.base.TestBase.driver_int(TestBase.java:64)
+	at com.qa.practice.testcases.DashBoardTest.setup(DashBoardTest.java:27)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 39 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.qa.practice.testcases.loginPageTest#setUp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 1.387
+  (Session info: chrome=105.0.5195.125)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Tohidurs-Air&apos;, ip: &apos;2a02:c7e:10b3:1200:79b9:d8f8:88e4:c7f4%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;11.0.15.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/hw/9qtphsf54yb...}, goog:chromeOptions: {debuggerAddress: localhost:62578}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 64882815552fb2a749018aa1ecfa45e7
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.qa.practice.base.TestBase.driver_int(TestBase.java:64)
+	at com.qa.practice.testcases.loginPageTest.setUp(loginPageTest.java:25)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 39 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.qa.practice.testcases.loginPageTest#invalidLoginTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>user@phptravelsff.com</td><td>demouserff</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 3.000
+  (Session info: chrome=105.0.5195.125)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Tohidurs-Air&apos;, ip: &apos;2a02:c7e:10b3:1200:79b9:d8f8:88e4:c7f4%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;11.0.15.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/hw/9qtphsf54yb...}, goog:chromeOptions: {debuggerAddress: localhost:62545}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3c1cb0125f8277994f7db041e59ad173
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -28,31 +65,108 @@ Session ID: e01a5b36-278d-46b4-a48e-d72144313212
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy8.click(Unknown Source)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
 	at com.qa.practice.pages.loginPage.dologin(loginPage.java:39)
-	at com.qa.practice.testcases.DashBoardTest.setup(DashBoardTest.java:29)
+	at com.qa.practice.testcases.loginPageTest.invalidLoginTest(loginPageTest.java:44)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 43 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.qa.practice.testcases.DashBoardTest#teardown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.qa.practice.testcases.DashBoardTest#dashboardWalletTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: TimedPromise timed out after 3000 ms
+... Removed 39 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.qa.practice.testcases.DashBoardTest#teardown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.qa.practice.testcases.loginPageTest#setUp</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.qa.practice.testcases.loginPageTest#setUp</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.qa.practice.testcases.loginPageTest#setUp</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.qa.practice.testcases.loginPageTest#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.qa.practice.testcases.loginPageTest#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.qa.practice.testcases.loginPageTest#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">com.qa.practice.testcases.loginPageTest#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">com.qa.practice.testcases.DashBoardTest#dashboardWalletTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 0.971
+  (Session info: chrome=105.0.5195.125)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Tohidurs-Air&apos;, ip: &apos;2a02:c7e:10b3:1200:94f2:4b17:1266:aa2%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;11.0.15.1&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 104.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220902153754, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 19.6.0, moz:processID: 16784, moz:profile: /var/folders/hw/9qtphsf54yb..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: e01a5b36-278d-46b4-a48e-d72144313212
+System info: host: &apos;Tohidurs-Air&apos;, ip: &apos;2a02:c7e:10b3:1200:79b9:d8f8:88e4:c7f4%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;11.0.15.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/hw/9qtphsf54yb...}, goog:chromeOptions: {debuggerAddress: localhost:62616}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0557ed9202eab998cf98b261e47bbe64
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy8.click(Unknown Source)
-	at com.qa.practice.pages.loginPage.dologin(loginPage.java:39)
-	at com.qa.practice.testcases.DashBoardTest.setup(DashBoardTest.java:29)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.qa.practice.base.TestBase.driver_int(TestBase.java:64)
+	at com.qa.practice.testcases.DashBoardTest.setup(DashBoardTest.java:27)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 43 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 39 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">com.qa.practice.testcases.loginPageTest#invalidLoginTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>user@phptravelsffff.com</td><td>demouser</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 1.387
+  (Session info: chrome=105.0.5195.125)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Tohidurs-Air&apos;, ip: &apos;2a02:c7e:10b3:1200:79b9:d8f8:88e4:c7f4%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;11.0.15.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/hw/9qtphsf54yb...}, goog:chromeOptions: {debuggerAddress: localhost:62578}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 64882815552fb2a749018aa1ecfa45e7
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.qa.practice.base.TestBase.driver_int(TestBase.java:64)
+	at com.qa.practice.testcases.loginPageTest.setUp(loginPageTest.java:25)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 39 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">com.qa.practice.testcases.loginPageTest#paymentlogoTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 1.387
+  (Session info: chrome=105.0.5195.125)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Tohidurs-Air&apos;, ip: &apos;2a02:c7e:10b3:1200:79b9:d8f8:88e4:c7f4%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;11.0.15.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/hw/9qtphsf54yb...}, goog:chromeOptions: {debuggerAddress: localhost:62578}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 64882815552fb2a749018aa1ecfa45e7
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.qa.practice.base.TestBase.driver_int(TestBase.java:64)
+	at com.qa.practice.testcases.loginPageTest.setUp(loginPageTest.java:25)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 39 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">com.qa.practice.testcases.loginPageTest#phpLogoTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 1.387
+  (Session info: chrome=105.0.5195.125)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Tohidurs-Air&apos;, ip: &apos;2a02:c7e:10b3:1200:79b9:d8f8:88e4:c7f4%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;11.0.15.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/hw/9qtphsf54yb...}, goog:chromeOptions: {debuggerAddress: localhost:62578}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 64882815552fb2a749018aa1ecfa45e7
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.qa.practice.base.TestBase.driver_int(TestBase.java:64)
+	at com.qa.practice.testcases.loginPageTest.setUp(loginPageTest.java:25)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 39 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">com.qa.practice.testcases.loginPageTest#validLoginTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 1.387
+  (Session info: chrome=105.0.5195.125)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Tohidurs-Air&apos;, ip: &apos;2a02:c7e:10b3:1200:79b9:d8f8:88e4:c7f4%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;11.0.15.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/hw/9qtphsf54yb...}, goog:chromeOptions: {debuggerAddress: localhost:62578}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 64882815552fb2a749018aa1ecfa45e7
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.qa.practice.base.TestBase.driver_int(TestBase.java:64)
+	at com.qa.practice.testcases.loginPageTest.setUp(loginPageTest.java:25)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 39 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

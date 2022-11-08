@@ -1,5 +1,7 @@
 package com.qa.practice.pages;
 
+import java.time.Duration;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -25,7 +27,7 @@ public class DashBoard  extends TestBase{
 	public WebElement wallet;
 	
 	
-	WebDriverWait wait = new WebDriverWait(driver,5);
+	WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(5000));
 	
 	public DashBoard() {
 		PageFactory.initElements(driver, this);
